@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8e6e9" />
+  <meta name="description" content="A wedding celebration invitation" />
+  <title>Our Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+  <header class="topbar"><span class="monogram" id="monogram">A ♡ A</span><span class="topbar-right">THE WEDDING CELEBRATION</span></header>
+  <main>
+    <section class="hero section" id="home">
+      <div class="flower flower-tl" aria-hidden="true">🌸</div><div class="flower flower-tr" aria-hidden="true">🌺</div>
+      <div class="arch reveal">
+        <div class="arch-inner">
+          <span class="tiny-ornament">✧ ♡ ✧</span>
+          <p class="eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+          <h1><span id="brideName">Aarav</span><span class="amp">&</span><span id="groomName">Ananya</span></h1>
+          <p class="script-subtitle">are getting married</p>
+          <div class="ornament">❦</div>
+          <p class="hero-message">Two hearts, one beautiful beginning.<br />We would love to celebrate with you.</p>
+          <a href="#save-date" class="pill primary">Open Invitation <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <p class="scroll-hint">SCROLL TO EXPLORE <span>⌄</span></p>
+    </section>
+
+    <section class="section save-date" id="save-date">
+      <p class="eyebrow reveal">SAVE THE DATE</p>
+      <h2 class="reveal">Pull to Reveal</h2>
+      <p class="section-description reveal">Drag the golden handle or tap to unveil our special day</p>
+      <div class="scroll-card reveal" id="scrollCard">
+        <div class="scroll-rod top-rod"></div>
+        <div class="scroll-paper" id="scrollPaper">
+          <div class="scroll-paper-content">
+            <span class="ornament-small">✧</span>
+            <p class="eyebrow">THE BIG DAY</p>
+            <strong id="dateDay">12</strong>
+            <span id="dateMonth">February</span>
+            <span id="dateYear">2027</span>
+            <div class="divider-flourish">❦</div>
+            <p id="dateWeekday">Friday · 6:00 PM</p>
+            <p class="small-muted" id="dateVenue">The Grand Palace</p>
+          </div>
+        </div>
+        <button class="scroll-rod bottom-rod" id="pullHandle" aria-label="Pull to reveal wedding date"><span class="handle-label">PULL DOWN ↓</span></button>
+      </div>
+      <button class="text-button" id="revealButton">Reveal our date ↓</button>
+      <p class="eyebrow countdown-title">COUNTING EVERY MOMENT</p>
+      <div class="countdown" aria-label="Countdown to wedding">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <a class="pill outline" id="calendarLink" href="#">♡ Add to Calendar</a>
+    </section>
+
+    <section class="section festivities" id="festivities">
+      <p class="eyebrow reveal">SWIPE THROUGH THE CELEBRATIONS</p>
+      <h2 class="reveal">Wedding Festivities</h2>
+      <p class="section-description reveal">Every celebration is a memory waiting to be made.</p>
+      <div class="event-track" id="eventTrack" aria-label="Wedding events"></div>
+      <p class="swipe-hint">← SWIPE TO EXPLORE →</p>
+    </section>
+
+    <section class="section story" id="story">
+      <p class="eyebrow reveal">THE JOURNEY OF US</p>
+      <h2 class="reveal">Our Story</h2>
+      <div class="story-card reveal">
+        <div class="story-photo" id="storyPhoto" role="img" aria-label="Couple photo placeholder"><span>♡</span></div>
+        <div class="story-body"><p class="eyebrow">A LITTLE LOVE STORY</p><h3 id="storyHeading">Written in the stars</h3><p id="storyText">From a simple hello to a lifetime of togetherness, our story has been filled with laughter, friendship, and love. Now, we begin our forever.</p></div>
+      </div>
+    </section>
+
+    <section class="section venue" id="venue">
+      <p class="eyebrow reveal">WHERE FOREVER BEGINS</p>
+      <h2 class="reveal">The Wedding Venue</h2>
+      <div class="venue-card reveal"><span class="venue-icon">⌖</span><h3 id="venueName">The Grand Palace</h3><p id="venueAddress">Bhubaneswar, Odisha, India</p><p id="venueTime">Friday, 12 February 2027 · 6:00 PM</p><a class="pill primary" id="directionsLink" target="_blank" rel="noopener noreferrer">Get Directions ↗</a></div>
+    </section>
+
+    <section class="section closing"><div class="closing-ornament">❀</div><p class="eyebrow">YOUR PRESENCE IS OUR PRESENT</p><h2>Can't wait to<br /><em>celebrate with you!</em></h2><p>With love,</p><p class="closing-names" id="closingNames">Aarav & Ananya</p><div class="divider-flourish">❦</div></section>
+  </main>
+  <footer>MADE WITH ♡ FOR OUR SPECIAL DAY</footer>
+  <button class="music-toggle" id="musicToggle" aria-label="Play background music" title="Toggle background music">♫ <span id="musicLabel">Music off</span></button>
+  <audio id="bgMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg" /></audio>
+</body>
+</html>
